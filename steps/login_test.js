@@ -1,4 +1,4 @@
-Feature('login');
+Feature('Login');
 
 const { I, login_page } = inject()
 
