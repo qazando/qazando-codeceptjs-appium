@@ -1,0 +1,23 @@
+{
+  "name": "qazando-automation",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados qazando",
+  "main": "index.js",
+  "scripts": {
+    "android": "codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"platform\": \"Android\", \"app\": \"/Users/qazando/Documents/app-release.apk\", \"desiredCapabilities\": { \"appPackage\": \"com.qazandoapp\", \"appActivity\": \"MainActivity\", \"deviceName\": \"pixel\", \"platformVersion\": \"9\" }}}} ' ",
+    "ios": "npx codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"platform\": \"iOS\", \"app\": \"/Users/qazando/Documents/qazandoapp.app\", \"desiredCapabilities\": { \"deviceName\": \"iPhone 11 Pro Max\", \"platformVersion\": \"13.1\" }}}} ' --debug ",
+    "test": "npx codeceptjs run --steps"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^2.6.5",
+    "mochawesome": "^6.1.1",
+    "node-random-name": "^1.0.1",
+    "random-number": "0.0.9",
+    "webdriverio": "^6.1.11"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1"
+  }
+}
