@@ -4,8 +4,8 @@
   "description": "Projeto de testes automatizados qazando",
   "main": "index.js",
   "scripts": {
-    "android": "codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"platform\": \"Android\", \"app\": \"/Users/eduardo.finotti/Desktop/app-release.apk\", \"desiredCapabilities\": { \"appPackage\": \"com.qazandoapp\", \"appActivity\": \"MainActivity\", \"deviceName\": \"pixel2\", \"platformVersion\": \"9\" }}}} ' ",
-    "ios": "npx codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"platform\": \"iOS\", \"app\": \"/Users/eduardo.finotti/Desktop/qazandoapp.app\", \"desiredCapabilities\": { \"deviceName\": \"iPhone 11 Pro Max\", \"platformVersion\": \"13.1\" }}}} ' --debug ",
+    "android": "codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"platform\": \"Android\", \"app\": \"/Users/qazando/Documents/app-release.apk\", \"desiredCapabilities\": { \"appPackage\": \"com.qazandoapp\", \"appActivity\": \"MainActivity\", \"deviceName\": \"pixel\", \"platformVersion\": \"9\" }}}} ' ",
+    "ios": "npx codeceptjs run --reporter mochawesome -c codecept.conf.js --override '{\"helpers\": {\"Appium\": { \"platform\": \"iOS\", \"app\": \"/Users/qazando/Documents/qazandoapp.app\", \"desiredCapabilities\": { \"deviceName\": \"iPhone 11 Pro Max\", \"platformVersion\": \"13.1\" }}}} ' --debug ",
     "test": "npx codeceptjs run --steps"
   },
   "author": "",

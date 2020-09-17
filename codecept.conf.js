@@ -3,7 +3,7 @@ exports.config = {
   helpers: {
     Appium: {
       platform: 'iOS',
-      app: '/Users/qazando/Documents/qazandoapp.app',
+      app: '/Users/eduardo.finotti/Desktop/qazandoapp.app',
       desiredCapabilities: {
         deviceName: 'iPhone 11 Pro Max',
         platformVersion: '13.1'

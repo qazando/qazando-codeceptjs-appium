@@ -7,7 +7,7 @@ BeforeSuite(() => {
 });
 
 Before(() => {
-    console.log('Before')
+    console.log('Before')    
 });
 
 AfterSuite(() => {
